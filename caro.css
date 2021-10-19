@@ -1,0 +1,66 @@
+/*Bopdy slides*/
+body{
+  margin: 10%;
+  border: 2px solid black;
+  width: 300px;
+}
+/* slider styles */
+#slider{
+position: relative;
+width: 300px;
+height: 250px;
+overflow: hidden;
+box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+#slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 10000%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+/* list images floating left */
+#slider ul li {
+  position: relative;
+  height: 100%;
+ 
+  float: left;
+}
+/* In slide images size */
+#slider ul li img{
+  width: 300px;
+  height: 200px;
+}
+/*prev and next button styles*/
+#slider #prev, #slider #next {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: blue;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+/* prev button alignment */
+#slider #prev {
+  left: 10px;
+  top: 30px;
+}
+/* Next button alignment */
+#slider #next {
+  right: 10px;
+  top: 30px;
+}
+/* Prev and next button oo mouse hover style */
+#slider #prev:hover, #slider #next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
+}
